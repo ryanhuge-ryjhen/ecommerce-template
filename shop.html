@@ -334,6 +334,291 @@
     </div>
     <!-- End BreadCrum -->
 
+    <!-- Shop Wrapper-->
+    <div
+      class="container grid lg:grid-cols-4 gap-6 pt-4 pb-16 items-start relative"
+    >
+      <!-- Sidebar -->
+      <div
+        class="col-span-1 bg-gray-100 px-4 pb-6 pt-4 shadow-sm rounded overflow-hidden absolute lg:static left-4 top-16 z-10 w-72 lg:w-full lg:block"
+      >
+        <div class="divide-gray-300 divide-y space-y-5 relative">
+          <!-- category filter -->
+          <div class="relative">
+            <div
+              class="lg:hidden text-gray-400 hover:text-primary text-lg absolute right-0 top-0 cursor-pointer"
+            ></div>
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              Categories
+            </h3>
+            <div class="space-y-2">
+              <!-- category -->
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="bedroom"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="bedroom" class="text-gray-600 ml-3 cursor-pointer"
+                  >Bedroom</label
+                >
+                <div class="ml-auto text-sm text-gray-600">(15)</div>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="sofa"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="sofa" class="text-gray-600 ml-3 cursor-pointer"
+                  >Sofa</label
+                >
+                <div class="ml-auto text-sm text-gray-600">(10)</div>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="office"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="office" class="text-gray-600 ml-3 cursor-pointer"
+                  >Office</label
+                >
+                <div class="ml-auto text-sm text-gray-600">(8)</div>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="outdoor"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="outdoor"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >outdoor</label
+                >
+                <div class="ml-auto text-sm text-gray-600">(5)</div>
+              </div>
+
+              <!--  end category -->
+            </div>
+          </div>
+          <!-- end category filter -->
+
+          <!-- Brand Filter -->
+
+          <div class="pt-4">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              Brand
+            </h3>
+            <div class="space-y-2">
+              <!-- single brand -->
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="dominik"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="dominik"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >dominik</label
+                >
+                <div class="ml-auto text-sm text-gray-600">(15)</div>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="karl"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="karl"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >karl</label
+                >
+                <div class="ml-auto text-sm text-gray-600">(10)</div>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="maxing"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="maxing"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >maxing</label
+                >
+                <div class="ml-auto text-sm text-gray-600">(8)</div>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="zara"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="zara"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >zara</label
+                >
+                <div class="ml-auto text-sm text-gray-600">(5)</div>
+
+                <!--  end single brand-->
+              </div>
+            </div>
+          </div>
+
+          <!-- Brand Filter -->
+
+          <!-- Price Filter -->
+          <div class="pt-4">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              Price
+            </h3>
+            <div class="mt-4 flex items-center">
+              <input
+                type="text"
+                class="w-full border border-gray-300 focus:ring-0 focus:border-primary px-3 py-1 text-gray-600 text-sm shadow-sm rounded"
+                placeholder="Min"
+              />
+              <span class="mx-3 text-gray-500">-</span>
+              <input
+                type="text"
+                class="w-full border border-gray-300 focus:ring-0 focus:border-primary px-3 py-1 text-gray-600 text-sm shadow-sm rounded"
+                placeholder="Max"
+              />
+            </div>
+          </div>
+          <!-- End Price Filter-->
+          <!-- Size Filter-->
+          <div class="pt-4">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              Size
+            </h3>
+            <div class="flex items-center gap-2">
+              <div class="size-selector">
+                <input type="radio" name="size" id="size-xs" class="hidden" />
+                <label
+                  for="size-xs"
+                  class="text-xs border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                  >XS</label
+                >
+              </div>
+              <div class="size-selector">
+                <input type="radio" name="size" id="size-s" class="hidden" />
+                <label
+                  for="size-s"
+                  class="text-xs border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                  >S</label
+                >
+              </div>
+              <div class="size-selector">
+                <input type="radio" name="size" id="size-m" class="hidden" />
+                <label
+                  for="size-m"
+                  class="text-xs border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                  >M</label
+                >
+              </div>
+              <div class="size-selector">
+                <input type="radio" name="size" id="size-l" class="hidden" />
+                <label
+                  for="size-l"
+                  class="text-xs border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                  >L</label
+                >
+              </div>
+              <div class="size-selector">
+                <input type="radio" name="size" id="size-xl" class="hidden" />
+                <label
+                  for="size-xl"
+                  class="text-xs border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                  >XL</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- End Size Filter-->
+
+          <!--Color Filter-->
+          <div class="pt-4">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              Color
+            </h3>
+            <div class="flex items-center gap-2">
+              <div class="color-selector">
+                <!-- color -->
+                <input
+                  type="radio"
+                  name="color"
+                  id="color-red"
+                  class="hidden"
+                  c
+                />
+                <label
+                  for="color-red"
+                  style="background-color: brown"
+                  class="text-xs border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow-sm"
+                ></label>
+                <!-- end color -->
+              </div>
+              <div class="color-selector">
+                <!-- color -->
+                <input
+                  type="radio"
+                  name="color"
+                  id="color-white"
+                  class="hidden"
+                  checked
+                />
+                <label
+                  for="color-white"
+                  style="background-color: white"
+                  class="text-xs border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow-sm"
+                ></label>
+                <!-- end color -->
+              </div>
+              <div class="color-selector">
+                <!-- color -->
+                <input
+                  type="radio"
+                  name="color"
+                  id="color-black"
+                  class="hidden"
+                />
+                <label
+                  for="color-black"
+                  style="background-color: black"
+                  class="text-xs border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow-sm"
+                ></label>
+                <!-- end color -->
+              </div>
+            </div>
+          </div>
+          <!-- End Color Filter-->
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <!-- Product -->
+      <div class="col-span-3">
+        <!-- sorting -->
+        <div class="mb-4 flex items-center">
+          <select
+            name=""
+            id=""
+            class="w-44 text-sm text-gray-600 px-4 py-3 border-gray-300 shadow-sm rounded"
+          ></select>
+        </div>
+        <!-- end sorting -->
+      </div>
+      <!-- End Product -->
+    </div>
+
+    <!-- End Shop Wrapper -->
+
     <!-- Footer -->
     <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
       <div class="container">
