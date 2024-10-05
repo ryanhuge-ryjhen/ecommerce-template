@@ -329,165 +329,162 @@
         <span class="text-sm text-gray-500">
           <i class="fas fa-chevron-right"></i>
         </span>
-        <p class="text-gray-500 font-medium uppercase">My wishlist</p>
+        <p class="text-gray-500 font-medium uppercase">checkout</p>
       </div>
     </div>
     <!-- end breadcrumb -->
 
-    <!-- ACCOUNT WRAPPER -->
-    <div class="container lg:grid grid-cols-12 items-start gap-6 pt-4 pb-16">
-      <div class="col-span-3">
-        <div class="px-4 py-3 shadow flex items-center gap-4 bg-gray-100">
-          <div class="flex-shrink-0">
-            <img
-              src="/images/easyshop.png"
-              alt=""
-              class="rounded-full h-14 w-14 p-1 border border-gray-200 object-cover"
-            />
+    <!-- CHECKOUT WRAPPER -->
+    <div class="container lg:grid grid-cols-12 gap-6 items-start pb-16 pt-4">
+      <!-- checkout form -->
+      <div class="lg:col-span-8 border border-gray-300 p-8 rounded bg-gray-100">
+        <form action="">
+          <h3 class="text-gray-800 capitalize font-medium text-xl mb-4">
+            checkout
+          </h3>
+          <div class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label
+                  for="firstname"
+                  class="text-gray-600 mb-2 block capitalize"
+                >
+                  first name
+                  <span class="text-primary">*</span>
+                </label>
+                <input type="text" name="" id="firstname" class="input-box" />
+              </div>
+              <div>
+                <label
+                  for="lastname"
+                  class="text-gray-600 mb-2 block capitalize"
+                >
+                  last name
+                  <span class="text-primary">*</span>
+                </label>
+                <input type="text" name="" id="lastname" class="input-box" />
+              </div>
+            </div>
+            <div>
+              <label
+                for="company-name"
+                class="text-gray-600 mb-2 block capitalize"
+              >
+                company name
+                <span class="text-primary">*</span>
+              </label>
+              <input type="text" name="" id="company-name" class="input-box" />
+            </div>
+            <div>
+              <label for="country" class="text-gray-600 mb-2 block capitalize">
+                country/region
+              </label>
+              <input type="text" name="" id="country" class="input-box" />
+            </div>
+            <div>
+              <label
+                for="street-address"
+                class="text-gray-600 mb-2 block capitalize"
+              >
+                street address
+                <span class="text-primary">*</span>
+              </label>
+              <input
+                type="text"
+                name=""
+                id="street-address"
+                class="input-box"
+              />
+            </div>
+            <div>
+              <label for="town" class="text-gray-600 mb-2 block capitalize">
+                town/city
+                <span class="text-primary">*</span>
+              </label>
+              <input type="text" name="" id="town" class="input-box" />
+            </div>
+            <div>
+              <label for="zip-code" class="text-gray-600 mb-2 block capitalize">
+                zip code
+                <span class="text-primary">*</span>
+              </label>
+              <input type="text" name="" id="zip-code" class="input-box" />
+            </div>
+            <div>
+              <label
+                for="phone-number"
+                class="text-gray-600 mb-2 block capitalize"
+              >
+                phone number
+                <span class="text-primary">*</span>
+              </label>
+              <input type="text" name="" id="phone-number" class="input-box" />
+            </div>
+            <div>
+              <label for="email" class="text-gray-600 mb-2 block capitalize">
+                email
+                <span class="text-primary">*</span>
+              </label>
+              <input type="email" name="" id="email" class="input-box" />
+            </div>
           </div>
-          <div class="">
-            <p class="text-gray-600">Hello..</p>
-            <h4 class="text-gray-800 capitalize font-semibold">Ryan Malaque</h4>
+        </form>
+      </div>
+      <!-- end checkout form -->
+
+      <!-- order summary -->
+      <div
+        class="lg:col-span-4 border border-gray-300 bg-gray-100 rounded px-4 py-4 lg:mt-0 mt-6"
+      >
+        <h4 class="text-gray-800 text-lg mb-4 font-medium uppercase">
+          order summary
+        </h4>
+        <div class="space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h5 class="text-gray-800 font-medium capitalize">
+                Italia shape sofa
+              </h5>
+              <p class="text-gray-600 text-sm">Size: M</p>
+            </div>
+            <p class="text-gray-600">x 3</p>
+            <p class="text-gray-600 font-medium">$300</p>
           </div>
         </div>
-        <div
-          class="mt-6 bg-gray-100 shadow rounded p-4 divide-y divide-gray-300 space-y-4"
+        <div class="flex justify-between border-b border-gray-400 mt-1">
+          <h4 class="text-gray-800 font-medium uppercase my-3">Subtotal</h4>
+          <h4 class="text-gray-800 font-medium uppercase my-3">$900</h4>
+        </div>
+        <div class="flex justify-between border-b border-gray-400 mt-1">
+          <h4 class="text-gray-800 font-medium uppercase my-3">shipping</h4>
+          <h4 class="text-gray-800 font-medium uppercase my-3">free</h4>
+        </div>
+        <div class="flex justify-between border-gray-400 mt-1">
+          <h4 class="text-gray-800 font-medium uppercase my-3">total</h4>
+          <h4 class="text-gray-800 font-medium uppercase my-3">$900</h4>
+        </div>
+        <div class="flex items-center mb-4 mt-2">
+          <input
+            type="checkbox"
+            name=""
+            id="agreement"
+            class="rounded-sm text-primary focus:ring-0 w-3 h-3 cursor-pointer"
+          />
+          <label for="agreement" class="ml-2 cursor-pointer text-sm"
+            >Agree to our
+          </label>
+          <span class="text-primary ml-1 text-sm">Terms and Conditions</span>
+        </div>
+        <button
+          type="submit"
+          class="uppercase bg-primary text-white border border-primary w-full py-2 rounded hover:bg-transparent hover:text-primary transition"
         >
-          <!-- single link -->
-          <div class="space-y-1 pl-8">
-            <a
-              href="account.html"
-              class="relative text-base font-medium capitalize hover:text-primary transition block "
-            >
-              manage account
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="far fa-address-card"></i>
-              </span>
-            </a>
-            <a
-              href="account.html"
-              class="hover:text-primary transition capitalize block">profile information</a>
-            </a>
-            <a
-              href="address.html"
-              class="hover:text-primary transition capitalize block">manage address </a>
-            </a>
-            <a
-              href="changepassword.html"
-              class="hover:text-primary transition capitalize block  ">change password </a>
-            </a>
-          </div>
-          <!-- end single link -->
-
-          <div class="space-y-1 pl-8 pt-4">
-            <a
-              href="#"
-              class="relative text-base font-medium capitalize hover:text-primary transition block"
-            >
-              My Order history
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="fas fa-gift"></i>
-              </span>
-            </a>
-            <a
-              href="#"
-              class="hover:text-primary transition capitalize block">my returns</a>
-            </a>
-            <a
-              href="#"
-              class="hover:text-primary transition capitalize block">my cancellations </a>
-            </a>
-            <a
-              href="#"
-              class="hover:text-primary transition capitalize block">my reviews </a>
-            </a>
-          </div>
-
-          <div class="space-y-1 pl-8 pt-4">
-            <a
-              href="#"
-              class="relative text-base font-medium capitalize hover:text-primary transition block"
-            >
-              payment method
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="far fa-credit-card"></i>
-              </span>
-            </a>
-            <a
-              href="#"
-              class="hover:text-primary transition capitalize block">voucher</a>
-            </a>
-          
-          </div>
-          <div class="space-y-1 pl-8 pt-4">
-            <a
-              href="#"
-              class="relative text-base font-medium capitalize text-primary hover:text-primary transition block"
-            >
-              my wishlist
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="far fa-heart"></i>
-              </span>
-            </a>
-           
-          </div>
-          <div class="space-y-1 pl-8 pt-4">
-            <a
-              href="#"
-              class="relative text-base font-medium capitalize hover:text-primary transition block"
-            >
-              logout
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="fas fa-sign-out-alt"></i>
-              </span>
-            </a>
-           
-          </div>
-        </div>
+          place order
+        </button>
       </div>
-
-      <!-- ACCOUNT CONTENT -->
-       <div class="col-span-9  p-6  mt-6 lg:mt-0  space-y-4">
-        <!-- SINGLE WISHLIST -->
-         <div class="flex items-center md:justify-between gap-4 md:gap-6 p-4 shadow rounded bg-gray-100    flex-wrap md:flex-nowrap">
-          <div class="w-28 flex-shrink-0">
-            <img src="/images/products/product1.jpg " alt="" class="w-full">
-          </div>
-          <div class="md:w-1/3 w-full">
-            <h2 class="uppercase text-gray-800 mb-1 xl:text-xl text-lg font-medium">italian l shape sofa</h2>
-            <p class="text-gray-500 text-sm">Availability: <span class="text-green-600">In Stock</span></p>
-          </div>
-        
-            <p class="text-primary text-lg font-semibold">$320</p>
-          <button class="text-white text-sm text-center bg-primary border border-primary px-6 py-2 rounded hover:text-primary hover:bg-transparent transition uppercase ml-auto md:ml-0 block">add to cart</button>
-
-          <div class="text-gray-700 hover:text-primary">
-
-            <i class="fas fa-trash"></i>
-          </div>
-         </div>
-         <div class="flex items-center md:justify-between gap-4 md:gap-6 p-4 shadow bg-gray-100 rounded flex-wrap md:flex-nowrap">
-          <div class="w-28 flex-shrink-0">
-            <img src="/images/products/product2.jpg " alt="" class="w-full">
-          </div>
-          <div class="md:w-1/3 w-full">
-            <h2 class="uppercase text-gray-800 mb-1 xl:text-xl text-lg font-medium">italian l shape sofa</h2>
-            <p class="text-gray-500 text-sm">Availability: <span class="text-primary">Out of Stock</span></p>
-          </div>
-        
-            <p class="text-primary text-lg font-semibold">$430</p>
-          <button class="text-white text-sm text-center cursor-not-allowed bg-opacity-70 bg-primary border border-primary px-6 py-2 rounded hover:text-primary hover:bg-transparent transition uppercase ml-auto md:ml-0 block">add to cart</button>
-
-          <div class="text-gray-700 hover:text-primary">
-
-            <i class="fas fa-trash"></i>
-          </div>
-         </div>
-        <!-- END SINGLE WISHLIST -->
-      </div>
-      <!-- END ACCOUNT CONTENT -->
+      <!-- end checkout form -->
     </div>
-    <!-- END ACCOUNT WRAPPER -->
+    <!-- END CHECKOUT WRAPPER -->
 
     <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
       <div class="container">
